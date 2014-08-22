@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>JavaScript Unit Test Framework from Tapesh</title>
+		<style>
+		.pass {
+			color: green;
+			font-size: 20pt;
+		}
+		.fail {
+			color: red;
+			font-size: 20pt;
+			text-decoration : line-through;
+		}
+		</style>
+	</head>
+	<script src="test.js">
+	</script>
+	<body>
+		<h1>JavaScript Unit Test Framework</h1>
+		<hr>
+		<div id="result"></div>
+	</body>
+	<script>
+		assert(true, "The first pass test case simulation");
+		assert(false, "The first fail test case simulation");
+
+		// Example section test case 1
+		function add(x,y) {
+			return x + y;
+		}
+
+		// input
+		var a = 3;
+			b = 4;
+
+		// result
+			res = 7;
+
+		// Test
+		assert(res == add(a,b), "Add two numbers.");
+	</script>
+</htmL>
